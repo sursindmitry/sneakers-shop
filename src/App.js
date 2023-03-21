@@ -20,9 +20,24 @@ function App() {
                     </li>
                 </ul>
             </header>
+
+            {/*TODO: Доделать контент*/}
             <div className="content">
                 <h1>Все кроссовки</h1>
-                ...
+
+                <div className="card">
+                    <img width={133} height={112} src="/img/sneakers/1.jpg" alt="Sneakers"/>
+                    <p>Мужские кроссовки Diadora Winner SL</p>
+                    <div className="cardBottom">
+                        <div className="costBottom">
+                            <span>Цена:</span>
+                            <b>12 999 руб.</b>
+                        </div>
+                        <button>
+                            <img width={11} height={11} src="/img/plus.svg" alt="Plus"/>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );

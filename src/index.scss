@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: system-ui;
+  font-family: 'Inter', system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e7f6ff;
@@ -45,9 +45,6 @@ header {
   }
 }
 
-
-
-
 .clear {
   *{
     box-sizing: border-box;
@@ -63,6 +60,24 @@ header {
   }
   li{
     list-style-type: none;
+  }
+}
+
+// Content
+.content {
+  padding: 40px;
+  .h1{
+    margin:0;
+  }
+}
+
+.card {
+  border: 1px solid #f8f8f8;
+  padding: 20px;
+  width: 210px;
+  .cardBottom{
+    display: flex;
+    justify-content: space-between;
   }
 }
 
