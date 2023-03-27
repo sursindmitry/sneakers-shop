@@ -1,7 +1,24 @@
 function App() {
     return (
-        <div className="wrapper">
-            <header className="clear">
+        <div className="wrapper clear">
+            <div className="overlay">
+                <div className="drawer">
+                    <h2>Корзина</h2>
+                    <div className="cartItem d-flex align-center">
+                        <div
+                            style={{backgroundImage: 'url(/img/sneakers/1.png)'}}
+                            className="cartImg"></div>
+                        <div className="text-item">
+                            <p>Мужские кроссовки Diadora Winner SL</p>
+                            <b>12 999 руб.</b>
+                        </div>
+                        <img className="removeBtn" src="/img/btn-remove.svg" alt="remove"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <header>
                 <div className="headerLeft">
                     <img width={40} height={40} src="/img/logo.svg" alt="Logo"/>
                     <div>
