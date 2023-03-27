@@ -3,7 +3,7 @@ function App() {
         <div className="wrapper">
             <header className="clear">
                 <div className="headerLeft">
-                    <img width={40} height={40} src="/img/logo.svg"/>
+                    <img width={40} height={40} src="/img/logo.svg" alt="Logo"/>
                     <div>
                         <h3>Sneakers shop</h3>
                         <p>Магазин лучших кросовок</p>
@@ -12,21 +12,30 @@ function App() {
 
                 <ul className="headerRight">
                     <li>
-                        <img width={18} height={18} src="/img/cart.svg"/>
+                        <img width={18} height={18} src="/img/cart.svg" alt="Cart"/>
                         <span>1205 руб.</span>
                     </li>
                     <li>
-                        <img width={18} height={18} src="/img/user.svg"/>
+                        <img width={18} height={18} src="/img/user.svg" alt="User"/>
                     </li>
                 </ul>
             </header>
             <div className="content">
-                <h1>Все кроссовки</h1>
-                <div className="sneakers">
+                <div className="d-flex align-center justify-between sneakers-box">
+                    <h1>Все кроссовки</h1>
+                    <div className="search-block d-flex">
+                        <img width={20} src="/img/search.svg" alt="Search"/>
+                        <input placeholder="Поиск..."/>
+                    </div>
+                </div>
+                <div className="d-flex">
                     <div className="card">
-                        <img width={133} height={112} src="/img/sneakers/1.jpg" alt="Sneakers"/>
+                        <div className="favorite">
+                            <img src="/img/heart-unliked.svg" alt="Unliked"/>
+                        </div>
+                        <img width={133} height={112} src="/img/sneakers/1.png" alt="Sneakers"/>
                         <h5>Мужские кроссовки Diadora Winner SL</h5>
-                        <div className="cardBottom">
+                        <div className="cardBottom d-flex">
                             <div className="cardCostBottom">
                                 <span>Цена:</span>
                                 <b>12 999 руб.</b>
@@ -39,7 +48,7 @@ function App() {
                     <div className="card">
                         <img width={133} height={112} src="/img/sneakers/2.jpg" alt="Sneakers"/>
                         <h5>Мужские кроссовки Diadora Winner SL</h5>
-                        <div className="cardBottom">
+                        <div className="cardBottom d-flex">
                             <div className="cardCostBottom">
                                 <span>Цена:</span>
                                 <b>12 999 руб.</b>
@@ -52,7 +61,7 @@ function App() {
                     <div className="card">
                         <img width={133} height={112} src="/img/sneakers/3.jpg" alt="Sneakers"/>
                         <h5>Мужские кроссовки Diadora Winner SL</h5>
-                        <div className="cardBottom">
+                        <div className="cardBottom d-flex">
                             <div className="cardCostBottom">
                                 <span>Цена:</span>
                                 <b>12 999 руб.</b>
@@ -65,7 +74,7 @@ function App() {
                     <div className="card">
                         <img width={133} height={112} src="/img/sneakers/4.jpg" alt="Sneakers"/>
                         <h5>Мужские кроссовки Diadora Winner SL</h5>
-                        <div className="cardBottom">
+                        <div className="cardBottom d-flex">
                             <div className="cardCostBottom">
                                 <span>Цена:</span>
                                 <b>12 999 руб.</b>
