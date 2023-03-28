@@ -3,17 +3,46 @@ function App() {
         <div className="wrapper clear">
             <div className="overlay">
                 <div className="drawer">
-                    <h2>Корзина</h2>
-                    <div className="cartItem d-flex align-center">
-                        <div
-                            style={{backgroundImage: 'url(/img/sneakers/1.png)'}}
-                            className="cartImg"></div>
-                        <div className="text-item">
-                            <p>Мужские кроссовки Diadora Winner SL</p>
-                            <b>12 999 руб.</b>
+                    <h2>Корзина <img className="removeBtn" src="/img/btn-remove.svg" alt="remove"/></h2>
+                    <div className="items">
+                        <div className="cartItem d-flex align-center">
+                            <div
+                                style={{backgroundImage: 'url(/img/sneakers/1.png)'}}
+                                className="cartImg"></div>
+                            <div className="text-item">
+                                <p>Мужские кроссовки Diadora Winner SL</p>
+                                <b>12 999 руб.</b>
+                            </div>
+                            <img className="removeBtn" src="/img/btn-remove.svg" alt="remove"/>
                         </div>
-                        <img className="removeBtn" src="/img/btn-remove.svg" alt="remove"/>
+                        <div className="cartItem d-flex align-center">
+                            <div
+                                style={{backgroundImage: 'url(/img/sneakers/1.png)'}}
+                                className="cartImg"></div>
+                            <div className="text-item">
+                                <p>Мужские кроссовки Diadora Winner SL</p>
+                                <b>12 999 руб.</b>
+                            </div>
+                            <img className="removeBtn" src="/img/btn-remove.svg" alt="remove"/>
+                        </div>
                     </div>
+
+                    <div className="cartTotalBlock">
+                        <ul>
+                            <li>
+                                <span>Итого:</span>
+                                <div></div>
+                                <b>21 498 руб.</b>
+                            </li>
+                            <li>
+                                <span>Налог 5%:</span>
+                                <div></div>
+                                <b>1074 руб.</b>
+                            </li>
+                        </ul>
+                        <button className="greenButton">Оформить заказ <img src="/img/arrow.svg" alt="arrow"/></button>
+                    </div>
+
                 </div>
             </div>
 
