@@ -12,7 +12,7 @@ body {
 
 .wrapper {
   background: #FFFFFF;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.64);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.64);
   border-radius: 20px;
   max-width: 1080px;
   margin: 50px auto;
@@ -24,6 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #eaeaea;
+
   .headerLeft {
     display: flex;
     align-items: center;
@@ -32,69 +33,77 @@ header {
       margin-left: 15px;
     }
 
-    h3{
+    h3 {
       text-transform: uppercase;
     }
+
     h3, p {
       margin: 0;
     }
   }
 
-  .headerRight{
+  .headerRight {
     display: flex;
     align-items: center;
 
-    li{
+    li {
       margin-right: 30px;
     }
   }
 }
 
 .clear {
-  *{
+  * {
     box-sizing: border-box;
     outline: none;
   }
-  a{
+
+  a {
     color: inherit;
     text-decoration: none;
   }
+
   ul {
     margin: 0;
     padding: 0;
   }
-  li{
+
+  li {
     list-style-type: none;
   }
 }
 
-.d-flex{
+.d-flex {
   display: flex;
 }
-.align-center{
+
+.align-center {
   align-items: center;
 }
-.justify-between{
+
+.justify-between {
   justify-content: space-between;
 }
 
 // Content
 .content {
   padding: 40px;
-  .h1{
+
+  .h1 {
     opacity: 5;
     margin-bottom: 40px;
   }
 
-  .sneakers-box{
+  .sneakers-box {
     margin-bottom: 20px;
   }
-  .search-block{
+
+  .search-block {
     border: 1px solid #f3f3f3;
     border-radius: 10px;
     padding: 0 15px;
 
-    input{
+    input {
       outline: 0;
       border: 0;
       padding: 13px;
@@ -103,10 +112,11 @@ header {
     }
   }
 
-  h5{
+  h5 {
     font-weight: 400;
     font-size: 14px;
   }
+
   .card {
     border: 1px solid #f3f3f3;
     padding: 30px;
@@ -114,32 +124,38 @@ header {
     border-radius: 40px;
     margin-right: 30px;
     transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-    &:hover{
-      box-shadow: 0 14px 30px rgba(0,0,0,0.06);
+
+    &:hover {
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
       transform: translateY(-10px);
     }
 
-    .favorite{
+    .favorite {
       position: absolute;
       cursor: pointer;
     }
-    .cardBottom{
+
+    .cardBottom {
       justify-content: space-between;
       text-align: center;
-      .cardCostBottom{
+
+      .cardCostBottom {
         text-align: justify;
         display: flex;
         flex-direction: column;
-        span{
+
+        span {
           opacity: 0.5;
           text-transform: uppercase;
           font-size: 13px;
         }
+
         b {
           font-size: 14px;
         }
       }
-      .button{
+
+      .button {
         background: #FFFFFF;
         border: 1px solid #F2F2F2;
         box-sizing: border-box;
@@ -154,44 +170,49 @@ header {
 
 
 // Overlay
-.overlay{
+.overlay {
   position: absolute;
   left: 0;
-  top:0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  .drawer{
+
+  .drawer {
     position: absolute;
     height: 100%;
     width: 420px;
     right: 0;
     background: #FFFFFF;
-    box-shadow: -10px 4px rgba(0,0,0,0.1);
+    box-shadow: -10px 4px rgba(0, 0, 0, 0.1);
     padding: 30px;
     display: flex;
     flex-direction: column;
-    .items{
+
+    .items {
       flex: 1;
       overflow: auto;
     }
-    h2{
+
+    h2 {
       margin-bottom: 30px;
       display: flex;
       justify-content: space-between;
-      img{
+
+      img {
         cursor: pointer;
       }
     }
 
-    .cartItem{
+    .cartItem {
       border: 1px solid #f3F3F3;
       border-radius: 20px;
       overflow: hidden;
       padding: 10px;
       margin-bottom: 20px;
-      .cartImg{
+
+      .cartImg {
         height: 100px;
         width: 200px;
         background-size: contain;
@@ -199,39 +220,44 @@ header {
         background-repeat: no-repeat;
         margin-right: 20px;
       }
-      .text-item{
+
+      .text-item {
         margin-right: 20px;
-        p{
+
+        p {
           font-size: 16px;
           margin: 0;
         }
-        b{
+
+        b {
           font-size: 14px;
         }
       }
-      .removeBtn{
+
+      .removeBtn {
         opacity: 0.5;
         transition: opacity 0.15s ease-in-out;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
           opacity: 1;
         }
       }
     }
   }
 
-  .cartTotalBlock{
-    ul{
+  .cartTotalBlock {
+    ul {
       display: block;
       margin-bottom: 20px !important;
-      li{
+
+      li {
         display: flex;
         align-items: flex-end;
         margin-bottom: 20px;
       }
 
-      div{
+      div {
         flex: 1;
         height: 1px;
         border-bottom: 1px dashed #DFDFDF;
@@ -241,15 +267,16 @@ header {
       }
     }
 
-    .greenButton{
+    .greenButton {
       position: relative;
-      &:hover{
-        img{
+
+      &:hover {
+        img {
           transform: translateX(5px);
         }
       }
 
-      img{
+      img {
         position: absolute;
         right: 30px;
         top: 20px;
@@ -258,7 +285,7 @@ header {
     }
   }
 
-  .greenButton{
+  .greenButton {
     width: 100%;
     height: 55px;
     background: #9dd558;
@@ -270,11 +297,11 @@ header {
     cursor: pointer;
     transition: background 0.2s ease-in-out;
 
-    &:hover{
+    &:hover {
       background: lighten(#9dd558, 5%);
     }
 
-    &:active{
+    &:active {
       background: darken(#9dd558, 5%);
     }
   }
