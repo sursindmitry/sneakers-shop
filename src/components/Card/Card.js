@@ -9,7 +9,6 @@ const Card = (props) => {
     }
 
     React.useEffect(() => {
-        console.log("Переменная изменилась")
     }, [isAdded])
 
     return (
