@@ -214,7 +214,41 @@ header {
         }
       }
     }
+
+    .cartEmpty{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+
+      .img{
+        margin-bottom: 20px;
+      }
+
+      p{
+        width: 280px;
+        line-height: 24px;
+        opacity: 0.6;
+      }
+      .greenButton {
+        position: relative;
+
+        &:hover {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+
+        img {
+          position: relative;
+          right: 90px;
+          transition: transform 0.20s ease-in-out;
+        }
+      }
+    }
   }
+
 
   .cartTotalBlock {
     ul {
