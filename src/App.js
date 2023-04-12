@@ -13,12 +13,17 @@ function App() {
     const [searchValue, setSearchValue] = React.useState("");
 
     React.useEffect(() => {
-        axios.get('https://642b8269208dfe2547196c38.mockapi.io/items').then(res => {
-            setItems(res.data)
-        });
-        axios.get('https://642b8269208dfe2547196c38.mockapi.io/cart').then(res => {
-            setCartItems(res.data)
-        });
+        axios.get('http://localhost:8080/items/all', {
+        })
+            .then(res=>{
+                setItems(res.data)
+            })
+            .catch(error =>{
+                console.error(error)
+            })
+        // axios.get('https://642b8269208dfe2547196c38.mockapi.io/cart').then(res => {
+        //     setCartItems(res.data)
+        // });
     }, [])
 
     const onAddToCart = (obj) => {
